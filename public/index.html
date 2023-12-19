@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas Drawing App</title>
+  <!-- Include Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+   <!-- Include Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+ 
+   <!-- Link to the external script file -->
+   <script src="../js/script.js"></script>
+
+
+</head>
+<body>
+  <canvas id="myCanvas"></canvas>
+
+  <div id="tools" class="mt-2">
+    <button id="pencilBtn" class="btn btn-primary"><i class="fa fa-pencil"></i></button>
+    <button id="eraserBtn" class="btn btn-danger"><i class="fa fa-eraser"></i></button>
+    <button id="cameraBtn" class="btn btn-info"><i class="fa fa-camera"></i></button>
+    
+    <input type="color" id="colorPicker" value="#000000" class="form-control" style="width: 3rem;">
+    <input type="file" accept="image/*" id="upload" style="display:none">
+  </div>
+
+  <button id="saveButton" class="btn btn-primary mt-2">Save Image</button>
+
+</body>
+</html>

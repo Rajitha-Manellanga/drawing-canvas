@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    overflow: hidden;
+  }
+
+  canvas {
+    display: block;
+    background-color: white;
+    touch-action: none; /* Disable touch gestures on canvas for mobile */
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */
+    margin: auto; /* Center the canvas horizontally */
+    border: 2px solid #ddd; /* Add a 2px solid border with a light gray color */
+  }
+
+  #tools {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    gap: 10px;
+  }
+
+  #saveButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  
