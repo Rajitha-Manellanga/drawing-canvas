@@ -95,52 +95,7 @@ document.addEventListener('DOMContentLoaded',  ()=> {
     link.click();
   });
 
-  document.getElementById('cameraBtn').addEventListener('click', () => {
-    if (isMobileDevice) {
-      //captureImage();
-    } else {
 
-    }
-  });
-
-  const isMobileDevice = ()=> {
-    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-  }
-
-
-  // async function captureImage() {
-  //   try {
-  //     if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-  //       const stream = await navigator.mediaDevices.getUserMedia({ video: true });
-  //       const video = document.createElement('video');
-  //       document.body.appendChild(video);
-
-  //       video.srcObject = stream;
-
-  //       video.onloadedmetadata = async () => {
-
-  //         canvas.width = video.videoWidth;
-  //         canvas.height = video.videoHeight;
-
-  //         context.drawImage(video, 0, 0, canvas.width, canvas.height);
-
-  //         const tracks = stream.getTracks();
-  //         tracks.forEach(track => track.stop());
-
-  //         document.body.removeChild(video);
-
-        
-  //       };
-
-  //       video.play();
-  //     } else {
-  //       console.error('getUserMedia is not supported in this browser');
-  //     }
-  //   } catch (error) {
-  //     console.error('Error accessing the camera:', error);
-  //   }
-      
-  // }
 
   // Resize canvas when the window is resized
   window.addEventListener('resize', () =>{
